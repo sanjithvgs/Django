@@ -4,4 +4,18 @@
 {% block content %}
 <h3>Hello World!</h3>
 <h1>I am {{name}}</h1>
+
+<form action="add" method="post">
+
+{% csrf_token %}
+	Enter First number : <input type="text" name="num1"><br>
+	Enter First number : <input type="text" name="num2"><br>
+	<input type="submit">
+<!--
+new sample page for testing
+
+<form action="sam">
+	<input type="submit"><br>
+-->
+
 {% endblock %}
