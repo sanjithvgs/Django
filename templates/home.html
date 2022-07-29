@@ -2,8 +2,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
 <h3>Hello World!</h3>
 <h1>I am {{name}}</h1>
+<a href="https://www.hyundai.com/in/en">
+<img src="{% static 'hyundai.jpg' %}" width="250" height="170">
+</a>
+
+<a href="https://www.mercedes-benz.com/en/">
+<img src="{% static 'benz.jpeg' %}" width="250" height="170" onmouseover="BENZ">
+</a><br>
+
+<a href="https://www.tesla.com/">
+<img src="{% static 'tesla.jpg' %}" width="250" height="170">
+</a>
+
+<a href="https://www.bmw.in/en/index.html">
+<img src="{% static 'bmw.jpg' %}" width="250" height="170">
+</a><br>
+
 
 <form action="add" method="post">
 
@@ -11,6 +28,7 @@
 	Enter First number : <input type="text" name="num1"><br>
 	Enter First number : <input type="text" name="num2"><br>
 	<input type="submit">
+
 <!--
 new sample page for testing
 
