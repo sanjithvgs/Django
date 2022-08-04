@@ -4,20 +4,23 @@
 {% block content %}
 {% load static %}
 <h3>Hello World!</h3>
-<h1>I am {{name}}</h1>
-<a href="https://www.hyundai.com/in/en">
+<div>
+<h1>I am <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">{{name}} </h1>
+</div>
+<a href="https://www.hyundai.com/in/en" target="_blank" >
 <img src="{% static 'hyundai.jpg' %}" width="250" height="170">
 </a>
 
-<a href="https://www.mercedes-benz.com/en/">
-<img src="{% static 'benz.jpeg' %}" width="250" height="170" onmouseover="BENZ">
+<a href="https://www.mercedes-benz.com/en/" target="_blank" >
+<img src="{% static 'benz.jpeg' %}" width="250" height="170">
 </a><br>
 
-<a href="https://www.tesla.com/">
+
+<a href="https://www.tesla.com/" target="_blank" >
 <img src="{% static 'tesla.jpg' %}" width="250" height="170">
 </a>
 
-<a href="https://www.bmw.in/en/index.html">
+<a href="https://www.bmw.in/en/index.html" target="_blank">
 <img src="{% static 'bmw.jpg' %}" width="250" height="170">
 </a><br>
 
@@ -28,6 +31,17 @@
 	Enter First number : <input type="text" name="num1"><br>
 	Enter First number : <input type="text" name="num2"><br>
 	<input type="submit">
+
+
+<script>
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+}
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+}
+</script>
+
 
 <!--
 new sample page for testing
