@@ -4,9 +4,7 @@
 {% block content %}
 {% load static %}
 <h3>Hello World!</h3>
-<div>
-<h1>I am <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">{{name}} </h1>
-</div>
+<h1>I am <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">{{dam.name}}<br> </h1>
 <a href="https://www.hyundai.com/in/en" target="_blank" >
 <img src="{% static 'hyundai.jpg' %}" width="250" height="170">
 </a>
@@ -23,13 +21,13 @@
 <a href="https://www.bmw.in/en/index.html" target="_blank">
 <img src="{% static 'bmw.jpg' %}" width="250" height="170">
 </a><br>
-
+<br>
 
 <form action="add" method="post">
 
 {% csrf_token %}
-	Enter First number : <input type="text" name="num1"><br>
-	Enter First number : <input type="text" name="num2"><br>
+	Enter First number : <input type="text" name="num1"><br><br>
+	Enter First number : <input type="text" name="num2"><br><br>
 	<input type="submit">
 
 

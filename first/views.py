@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import destination
 # Create your views here.
 def home(request):
-	return render(request, 'home.html',{'name':'Sanjith VGS'})
+
+	det1=destination()
+	det1.name="SANJITH VGS"
+	return render(request, 'home.html',{'dam':det1})
 
 def add(request):
 
