@@ -15,6 +15,8 @@ def add(request):
 	res = int(val1)+int(val2)
 	return render(request, 'result.html',{'result':res})
 
+def new(request):
+	return render(request, 'new.html')
 
 # New sample page for testing
 #def sam(request):
