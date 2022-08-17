@@ -4,8 +4,26 @@
 
 {% block content %}
 {% load static %}
-<h3>Hello World!</h3>
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+<head>
+<style>
+.name { background-color:yellow;
+padding: 15px 10px;
+
+ }
+</style>
+
+
+<title>
+Web Page
+</title>
+</head>
+</body>
+<h3 class="name">Hello World!</h3>
 <h1>I am <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">{{dam.name}}<br> </h1>
+
 <a href="https://www.hyundai.com/in/en" target="_blank" >
 <img src="{% static 'hyundai.jpg' %}" width="250" height="170">
 </a>
@@ -43,8 +61,10 @@ function mouseOut() {
 }
 </script>
 <div>
-<a href="https://www.youtube.com/" target="_blank"> youtube</a>
+<a href="new" target="_blank"> youtube</a>
 </div>
+
+
 <!--
 new sample page for testing
 
