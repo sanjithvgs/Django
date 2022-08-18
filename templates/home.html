@@ -8,9 +8,15 @@
 <html lang="en-US">
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 .name { background-color:yellow;
 padding: 15px 10px;
+}
+ .img-container {
+    text-align: center;
+    display: block;
+
 
  }
 </style>
@@ -21,30 +27,32 @@ Web Page
 </title>
 </head>
 </body>
-<h3 class="name">Hello World!</h3>
-<h1>I am <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">{{dam.name}}<br> </h1>
+<h3 class="name" align="center"">Hello World!</h3>
+<h1 align="center">I am <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">{{dam.name}}<br> </h1>
 
+<span  class="img-container">
 <a href="https://www.hyundai.com/in/en" target="_blank" >
-<img src="{% static 'hyundai.jpg' %}" width="250" height="170">
-</a>
+<img src="{% static 'hyundai.jpg' %}" width="500" height="250" >
+</a></span><br>
 
+<span  class="img-container">
 <a href="https://www.mercedes-benz.com/en/" target="_blank" >
-<img src="{% static 'benz.jpeg' %}" width="250" height="170">
-</a><br>
+<img src="{% static 'benz.jpeg' %}" width="500" height="250" align="center">
+</a></span><br>
 
-
+<span  class="img-container">
 <a href="https://www.tesla.com/" target="_blank" >
-<img src="{% static 'tesla.jpg' %}" width="250" height="170">
-</a>
+<img src="{% static 'tesla.jpg' %}" width="500" height="250" align="center">
+</a></span><br>
 
-<a href="https://www.bmw.in/en/index.html" target="_blank">
-<img src="{% static 'bmw.jpg' %}" width="250" height="170">
-</a><br>
-<br>
+<span  class="img-container">
+<a href="https://www.bmw.in/en/index.html" target="_blank" align="center">
+<img src="{% static 'bmw.jpg' %}" width="500" height="250">
+</a></span><br>
 
 
 
-<form action="add" method="post">
+<form action="add" method="post" align="center">
 
 {% csrf_token %}
 	Enter First number : <input type="text" name="num1"><br><br>
