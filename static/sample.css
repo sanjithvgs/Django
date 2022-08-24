@@ -1,0 +1,33 @@
+/* index.html Start */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: powderblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  text-decoration:none;
+
+}
+
+li a:hover {
+  background-color: red ;
+}
+
+.lis {
+	color:black;
+	font-weight: bold;
+	font-size:25px
+
+}
+/* index.html End */
