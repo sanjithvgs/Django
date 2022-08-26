@@ -8,6 +8,18 @@ def home(request):
 	det1.name="SANJITH VGS"
 	return render(request, 'home.html',{'dam':det1})
 
+def n_car(request):
+	return render(request, 'newcar.html')
+
+def service(request):
+	return render(request, 'service.html')
+
+def account(request):
+	return render(request, 'account.html')
+
+def contact(request):
+	return render(request, 'contact.html')
+
 def add(request):
 
 	val1=request.POST["num1"]
