@@ -1,1 +1,39 @@
-<h1>New car page</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>New cars</title>
+</head>
+<body bgcolor="gray">
+<h1 align-text="center" title="Scroll Down" style="background-color:lightgreen;padding:5px 600px;display: inline-block;">New Cars</h1>
+
+<div>
+<div class="car">
+<h3>Ioniq</h3>
+<img src="{% static 'hyundai/ioniq.jpg' %}" width="100%">
+</div>
+
+<div class="car">
+<h3>Kono</h3>
+<img src="{% static 'hyundai/kono.jpg' %}" width="100%">
+</div>
+
+<div class="car">
+<h3>Nexo</h3>
+<img src="{% static 'hyundai/nexo.jpg' %}" width="100%">
+</div>
+
+<div class="car">
+<h3>Santa</h3>
+<img src="{% static 'hyundai/santa.jpg' %}" width="100%">
+</div>
+
+<div class="car">
+<h3>Verna</h3>
+<img src="{% static 'hyundai/verna.jpg' %}" width="100%">
+</div>
+
+</div>
+</body>
+</html>
