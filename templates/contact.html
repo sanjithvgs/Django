@@ -6,22 +6,23 @@
     <h3>Fill out the form to contact us!</h3>
   </div>
   <div align="center">
+  <form>
         
         <div>
           <p class="left">
             <label for="first_name">First name</label>
-            <input type="text" name="first_name" placeholder="John" />
+            <input type="text" name="first_name" placeholder="John" required/>
           </p>
           <p class="pull-right">
             <label for="last_name">Last name</label>
-            <input type="text" name="last_name" placeholder="Smith" />      
+            <input type="text" name="last_name" placeholder="Smith" required/>      
           </p>
         </div>
         
         <div>
           <p>
             <label for="email">Email <span class="req">*</span></label>
-            <input type="email" name="email" placeholder="john.smith@gmail.com" />
+            <input type="email" name="email" placeholder="john.smith@gmail.com" required/>
           </p>
         </div>        
         <div>
@@ -37,7 +38,7 @@
         </div>
         
       </div>
-
+  </form>
   </div>
 </div>
 </body>
