@@ -14,8 +14,8 @@ def n_car(request):
 def service(request):
 	return render(request, 'service.html')
 
-def account(request):
-	return render(request, 'account.html')
+def locate(request):
+	return render(request, 'locate.html')
 
 def contact(request):
 	return render(request, 'contact.html')
