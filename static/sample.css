@@ -1,8 +1,9 @@
-/* index.html Start */
+/* home.html Start */
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
   overflow: hidden;
   background-color: powderblue;
 }
@@ -15,7 +16,7 @@ li a {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 70px;
+  padding: 60px;
   text-decoration:none;
 
 }
@@ -27,10 +28,10 @@ li a:hover {
 .lis {
 	color:black;
 	font-weight: bold;
-	font-size:25px
+	font-size:20px
 
 }
-/* index.html End */
+/* home.html End */
 
 #conc{
 	background-color: yellow;
